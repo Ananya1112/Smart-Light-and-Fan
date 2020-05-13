@@ -1,24 +1,24 @@
-#define BLYNK_PRINT Serial   
-#include <ESP8266WiFi.h>
-#include "Adafruit_MQTT.h"
-#include "Adafruit_MQTT_Client.h"
-#include <BlynkSimpleEsp8266.h>
-#include <DHT.h>
+define BLYNK_PRINT Serial   
+include <ESP8266WiFi.h>
+include "Adafruit_MQTT.h"
+include "Adafruit_MQTT_Client.h"
+include <BlynkSimpleEsp8266.h>
+include <DHT.h>
 
-#define WIFI_SSID "Ananya"
-#define WIFI_PASS "king1112"
+define WIFI_SSID "Ananya"
+define WIFI_PASS "king1112"
 
-#define MQTT_SERV "io.adafruit.com"
-#define MQTT_PORT 1883
-#define MQTT_NAME "AnanyaKing"
-#define MQTT_PASS "aio_PdPN596mS7GHObAp5lz2y49z91DO"
+define MQTT_SERV "io.adafruit.com"
+define MQTT_PORT 1883
+define MQTT_NAME "AnanyaKing"
+define MQTT_PASS "aio_PdPN596mS7GHObAp5lz2y49z91DO"
 char auth[] = "3LUZ8opSYKClrpGwXU5tx46hckt9ss1Z"; // PASTE YOUR AUTHENTICATION CODE HERE        
-#define LED D1
-#define FAN D2
+define LED D1
+define FAN D2
 int LDR_Pin = A0;
 
-#define DHTPIN D3
-#define DHTTYPE DHT11   
+define DHTPIN D3
+define DHTTYPE DHT11   
 DHT dht(DHTPIN, DHTTYPE);
 
 int chk;
